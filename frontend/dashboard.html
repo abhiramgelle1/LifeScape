@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LifeScape - Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="appLogo.png" alt="LifeScape Logo" class="logo-small" />
+    <h2>LifeScape Dashboard</h2>
+  </header>
+
+  <main class="main-grid">
+    <section class="controls">
+      <button onclick="startGame()">▶ Start</button>
+      <button onclick="stopGame()">⏸ Stop</button>
+      <button onclick="nextGeneration()">⏭ Next</button>
+      <button onclick="resetGame()">♻ Reset</button>
+    </section>
+
+    <section class="board">
+	<p id="generation-counter" style="text-align:center; font-weight:bold; font-size:18px;">Generation: 0</p>
+      <table id="game-board"></table>
+    </section>
+  </main>
+
+  <script src="js/game.js"></script>
+</body>
+</html>

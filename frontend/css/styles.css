@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.logo-small {
+  width: 60px;
+  margin-right: 10px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #00897b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 260px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  background-color: #26a69a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2bbbad;
+}
+
+#game-board {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+#game-board td {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.alive {
+  background-color: red !important;
+}
+
+.dead {
+  background-color: white !important;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #e0f2f1;
+  border-bottom: 1px solid #ccc;
+}
+
+.admin-panel {
+  width: 60%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
