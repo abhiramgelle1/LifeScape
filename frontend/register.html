@@ -8,12 +8,20 @@
 <body class="centered">
   <img src="appLogo.png" alt="LifeScape Logo" class="logo" />
   <h2>Create your LifeScape Account</h2>
+
   <div class="form-container">
     <input type="text" id="username" placeholder="Username" />
     <input type="email" id="email" placeholder="Email" />
     <input type="password" id="password" placeholder="Password" />
+    
+    <select id="role">
+      <option value="player">Player</option>
+      <option value="admin">Admin</option>
+    </select>
+
     <button onclick="register()">Register</button>
   </div>
+
   <script src="js/auth.js"></script>
 </body>
 </html>

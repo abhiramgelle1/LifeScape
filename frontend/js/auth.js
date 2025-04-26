@@ -2,11 +2,12 @@ function register() {
     const username = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
+    const role = document.getElementById("role").value;
 
     fetch("../backend/register.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, email, password })
+        body: JSON.stringify({ username, email, password, role })
     })
     .then(res => res.json())
     .then(data => {
@@ -14,10 +15,11 @@ function register() {
             alert("Registered successfully! Please login.");
             window.location.href = "login.html";
         } else {
-            alert("Error! Username or email might already exist.");
+            alert("Registration failed. Try another username/email.");
         }
     });
 }
+
 
 function login() {
     const username = document.getElementById("username").value.trim();
